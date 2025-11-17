@@ -1,0 +1,104 @@
+{
+    margin: 0;
+    padding: 10;
+    font-family: Arial, sans-serif;
+    center: center;
+    /* Aplica a mesma família de fontes a todos os elementos */
+}
+
+body {
+    background-color: #17cc30ff;
+    text-align: center;
+}
+a {
+    color: red;
+    font-size: 26px;
+    center: center;
+}
+p {
+    font-size: 36px;
+    color: red;
+    text-align: center;
+}
+div {
+    background-color: lightgray;
+    padding: 20px;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+}
+.botao {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+#main-header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-align: center;
+}
+[data-info] {
+    background-color: yellow;
+}
+input[type="text"] {
+    border: 1px solid gray;
+}
+div[class~="example"] {
+    color: red;
+}
+a[href^="https"] {
+    color: green;
+}
+img[src$=".jpg"] {
+    border: 2px solid black;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+li:hover {
+    background-color: lightblue; /* Muda a cor de fundo ao passar o mouse */
+}
+li:nth-child(odd) {
+    color: red; /* Cor vermelha para itens ímpares */
+}
+li:last-child {
+    font-weight: bold; /* Negrito para o último item */
+}
+p::before {
+    content: "Nota: ";
+    color: red;
+    font-weight: bold;
+}
+p::after {
+    content: " (leia com atenção)";
+    color: blue;
+    font-style: italic;
+}
+p::first-letter {
+    font-size: 200%;
+    color: green;
+}
+.texto-padrao {
+    color: blue; /* Cor padrão para todos os parágrafos com classe "texto-padrao" */
+}
+.texto-padrao {
+    color: red !important; /* Esta cor tem prioridade sobre a azul, mesmo sendo definida depois */
+}
+.texto-padrao {
+    color: yellow; /* Outra cor padrão para todos os parágrafos com classe "texto-padrao" */
+}
